@@ -26,12 +26,13 @@ const winPatterns = [
     [6,7,8]
 ];
 
+let count = 0;
 const resetGame = () => {
+    count = 0;
     turn0 = true;
     enableBoxes();
     msgContainer.classList.add("hide");
 }
-let count = 0;
 boxes.forEach((box) => {
     // console.log(box);
     box.addEventListener("click", () => {
@@ -90,8 +91,8 @@ const checkWinner = (count) => {
         }
         console.log(count);
         if(count === 9){
-            showWinner("",count);
             count = 0;
+            showWinner("",count);
         }
     }
 }
