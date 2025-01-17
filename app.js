@@ -99,3 +99,18 @@ const checkWinner = (count) => {
 
 newGameBtn.addEventListener('click', resetGame);
 resetBtn.addEventListener('click', resetGame);
+
+
+// Example of an Javascript object
+const myObject = {
+    city: "Madrid",
+    greet() {
+      console.log(`Greet 1 from ${this.city}`);
+    },
+    greet2: function(){
+      console.log(`Greet 2 from ${this.city}`);
+    }
+  };
+  
+//   myObject.greet();
+  
